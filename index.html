@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eres el Milagro Más Hermoso que Dios Escribió para mi Destino</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+radial-gradient(circle at top,#2d1f55 0%,#151129 35%,#090913 70%,#030307 100%);
+
+font-family:'Cormorant Garamond',serif;
+
+overflow-x:hidden;
+
+color:white;
+
+min-height:100vh;
+
+}
+
+
+/*=========================================
+ESTRELLAS
+=========================================*/
+
+.stars{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+overflow:hidden;
+
+z-index:-10;
+
+}
+
+.star{
+
+position:absolute;
+
+width:2px;
+
+height:2px;
+
+background:white;
+
+border-radius:50%;
+
+animation:twinkle linear infinite;
+
+}
+
+@keyframes twinkle{
+
+0%{
+
+opacity:.2;
+transform:scale(.5);
+
+}
+
+50%{
+
+opacity:1;
+transform:scale(1.8);
+
+}
+
+100%{
+
+opacity:.2;
+transform:scale(.5);
+
+}
+
+}
+
+
+/*=========================================
+LUNA
+=========================================*/
+
+.moon{
+
+position:fixed;
+
+top:60px;
+
+right:60px;
+
+width:150px;
+
+height:150px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle at 35% 35%,
+#fff,
+#fdf8d2,
+#f6e4a5,
+#e6cf80);
+
+box-shadow:
+
+0 0 30px #fff,
+
+0 0 60px #fff8d8,
+
+0 0 100px rgba(255,255,255,.5);
+
+z-index:-8;
+
+animation:luna 6s ease-in-out infinite;
+
+}
+
+@keyframes luna{
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+
+/*=========================================
+AURORA
+=========================================*/
+
+.aurora{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+top:0;
+
+left:0;
+
+background:
+
+radial-gradient(circle at 20% 20%,rgba(255,105,180,.08),transparent 40%),
+
+radial-gradient(circle at 80% 15%,rgba(173,216,230,.08),transparent 45%),
+
+radial-gradient(circle at center,rgba(255,255,255,.03),transparent 65%);
+
+animation:aurora 15s linear infinite alternate;
+
+z-index:-9;
+
+}
+
+@keyframes aurora{
+
+100%{
+
+transform:scale(1.15) rotate(8deg);
+
+}
+
+}
+
+
+/*=========================================
+PÉTALOS
+=========================================*/
+
+.petalo{
+
+position:fixed;
+
+top:-50px;
+
+font-size:22px;
+
+animation:caer linear infinite;
+
+opacity:.8;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+@keyframes caer{
+
+0%{
+
+transform:
+translateY(-100px)
+rotate(0deg);
+
+}
+
+100%{
+
+transform:
+translateY(120vh)
+translateX(120px)
+rotate(720deg);
+
+}
+
+}
+
+
+/*=========================================
+CORAZONES
+=========================================*/
+
+.heart{
+
+position:fixed;
+
+color:#ffb6d9;
+
+opacity:.25;
+
+animation:heartFloat linear infinite;
+
+pointer-events:none;
+
+z-index:-2;
+
+}
+
+@keyframes heartFloat{
+
+0%{
+
+transform:
+
+translateY(110vh)
+
+scale(.5);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:.25;
+
+}
+
+80%{
+
+opacity:.35;
+
+}
+
+100%{
+
+transform:
+
+translateY(-150px)
+
+scale(1.4);
+
+opacity:0;
+
+}
+
+}
+
+
+/*=========================================
+CONTENEDOR
+=========================================*/
+
+.container{
+
+width:92%;
+
+max-width:900px;
+
+margin:80px auto;
+
+padding:50px;
+
+background:
+
+rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.18);
+
+border-radius:35px;
+
+box-shadow:
+
+0 0 50px rgba(255,182,193,.15),
+
+0 0 100px rgba(255,255,255,.05);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+/*Brillo*/
+
+.container::before{
+
+content:"";
+
+position:absolute;
+
+top:-150%;
+
+left:-50%;
+
+width:220%;
+
+height:220%;
+
+background:
+
+linear-gradient(
+
+120deg,
+
+transparent,
+
+rgba(255,255,255,.12),
+
+transparent
+
+);
+
+transform:rotate(20deg);
+
+animation:shine 12s linear infinite;
+
+}
+
+@keyframes shine{
+
+100%{
+
+transform:
+
+translateX(45%)
+
+translateY(45%)
+
+rotate(20deg);
+
+}
+
+}
+
+
+/*=========================================
+TÍTULO
+=========================================*/
+
+h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:72px;
+
+text-align:center;
+
+line-height:1.2;
+
+margin-bottom:20px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#fff,
+
+#ffe4ef,
+
+#ffd4ea,
+
+#fff
+
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+
+0 0 20px rgba(255,255,255,.3);
+
+}
+
+.fecha{
+
+text-align:center;
+
+font-size:26px;
+
+letter-spacing:2px;
+
+margin-bottom:55px;
+
+color:#ffe6f4;
+
+font-style:italic;
+
+}
+
+
+/*=========================================
+POEMA
+=========================================*/
+
+.poema{
+
+font-size:31px;
+
+line-height:2.1;
+
+text-align:center;
+
+color:#fffdfd;
+
+}
+
+.poema p{
+
+margin:22px 0;
+
+animation:aparecer .9s ease both;
+
+}
+
+@keyframes aparecer{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.destacado{
+
+font-family:'Pinyon Script',cursive;
+
+font-size:48px;
+
+color:#ffd4ea;
+
+}
+
+.final{
+
+margin-top:70px;
+
+font-size:40px;
+
+color:#ffd6ea;
+
+font-family:'Great Vibes',cursive;
+
+}
+
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:768px){
+
+.container{
+
+padding:25px;
+
+margin:30px auto;
+
+}
+
+h1{
+
+font-size:46px;
+
+}
+
+.fecha{
+
+font-size:18px;
+
+}
+
+.poema{
+
+font-size:23px;
+
+line-height:1.9;
+
+}
+
+.destacado{
+
+font-size:36px;
+
+}
+
+.final{
+
+font-size:32px;
+
+}
+
+.moon{
+
+width:90px;
+
+height:90px;
+
+top:20px;
+
+right:20px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="aurora"></div>
+
+<div class="moon"></div>
+
+<div class="container">
+
+<h1>
+ERES EL MILAGRO MÁS HERMOSO QUE DIOS ESCRIBIÓ PARA MI DESTINO
+</h1>
+
+<div class="fecha">
+Domingo, 28 de junio de 2026 — Noche
+</div>
+
+<div class="poema">
+
+<p class="destacado">
+Esta noche...
+</p>
+
+<p>
+cuando el silencio parece abrazar al mundo con una delicadeza infinita,
+</p>
+
+<p>
+cuando la luna observa desde lo alto como una fiel testigo de los corazones que aman de verdad,
+</p>
+
+<p>
+cuando cada estrella parece encenderse únicamente para recordarme tu existencia,
+</p>
+
+<p>
+yo vuelvo a pensar en ti...
+</p>
+
+<p>
+Y, una vez más, comprendo que jamás encontraré palabras suficientes para describir todo lo que siento por la mujer que transformó mi vida para siempre.
+</p>
+
+<p>
+Porque tú...
+</p>
+
+<p>
+no eres solamente el amor de mi vida.
+</p>
+
+<p>
+Eres la razón por la que cada amanecer tiene sentido.
+</p>
+
+<p>
+La calma que llega después de todas mis tormentas.
+</p>
+
+<p>
+La luz que ilumina hasta el rincón más oscuro de mi corazón.
+</p>
+
+<p>
+La ilusión que hace sonreír a mi alma incluso en los días difíciles.
+</p>
+
+<p>
+Desde que llegaste a mi vida, descubrí que el amor verdadero sí existe.
+</p>
+
+<p>
+Descubrí que una sola persona puede convertirse en hogar.
+</p>
+
+<p>
+Que una sonrisa puede sanar heridas que parecían imposibles de cerrar.
+</p>
+
+<p>
+Que una mirada puede transmitir más paz que mil palabras.
+</p>
+
+<p>
+Y esa persona eres tú.
+</p>
+
+<p>
+Mi princesa.
+</p>
+
+<p>
+Mi niña hermosa.
+</p>
+
+<p>
+Mi mayor bendición.
+</p>
+
+<p>
+Mi sueño más precioso hecho realidad.
+</p>
+
+<p>
+Esta noche quiero que sepas que mi corazón late únicamente pronunciando tu nombre.
+</p>
+
+<p>
+Cada latido parece susurrarte un "te amo".
+</p>
+
+<p>
+Cada respiración lleva un pedacito de ti.
+</p>
+
+<p>
+Cada pensamiento termina encontrándote aunque intente pensar en cualquier otra cosa.
+</p>
+
+<p>
+Porque ya no existe un lugar dentro de mí donde tú no habites.
+</p>
+
+<p>
+Estás en mis sueños.
+</p>
+
+<p>
+En mis recuerdos.
+</p>
+
+<p>
+En mis ilusiones.
+</p>
+
+<p>
+En mis oraciones.
+</p>
+
+<p>
+En mis planes.
+</p>
+
+<p>
+Y, sobre todo,
+</p>
+
+<p>
+estás profundamente grabada en mi corazón, en un lugar donde absolutamente nadie podrá reemplazarte jamás.
+</p>
+
+<p>
+A veces me pregunto cómo tuve la fortuna de encontrarte.
+</p>
+
+<p>
+Cómo el destino permitió que dos caminos completamente distintos terminaran convirtiéndose en uno solo.
+</p>
+
+<p>
+Y cada vez que intento responder esa pregunta...
+</p>
+
+<p>
+simplemente sonrío.
+</p>
+
+<p>
+Porque hay milagros que no necesitan explicación.
+</p>
+
+<p>
+Solo necesitan ser agradecidos.
+</p>
+
+<p>
+Y tú eres el milagro más hermoso que Dios permitió llegar a mi vida.
+</p>
+
+<p>
+No existe un solo día en que deje de enamorarme de ti.
+</p>
+
+<p>
+Al contrario.
+</p>
+
+<p>
+Cada conversación contigo.
+</p>
+
+<p>
+Cada risa.
+</p>
+
+<p>
+Cada pequeño momento.
+</p>
+
+<p>
+Cada detalle.
+</p>
+
+<p>
+Cada palabra.
+</p>
+
+<p>
+Cada gesto.
+</p>
+
+<p>
+Hace que mi amor crezca muchísimo más de lo que creció el día anterior.
+</p>
+
+<p>
+Pensé que ya había llegado al límite de lo que podía amar...
+</p>
+
+<p>
+pero entonces aparece un nuevo día contigo,
+</p>
+
+<p>
+y descubro que mi corazón todavía tiene un universo entero por entregarte.
+</p>
+
+<p>
+Quiero cuidar de ti.
+</p>
+
+<p>
+Quiero celebrar cada una de tus victorias.
+</p>
+
+<p>
+Quiero sostener tu mano cuando sientas miedo.
+</p>
+
+<p>
+Quiero abrazarte cuando necesites refugio.
+</p>
+
+<p>
+Quiero ser quien limpie tus lágrimas antes de que siquiera caigan.
+</p>
+
+<p>
+Quiero proteger tu sonrisa con todo lo que soy.
+</p>
+
+<p>
+Porque tu felicidad se convirtió también en la mía.
+</p>
+
+<p>
+Y no hay regalo más grande para mi corazón que saber que tú sonríes.
+</p>
+
+<p class="destacado">
+Mi amor...
+</p>
+
+<p>
+Si alguna vez llegaran noches difíciles,
+</p>
+
+<p>
+quiero que recuerdes esto:
+</p>
+
+<p>
+Nunca caminarás sola.
+</p>
+
+<p>
+Mientras mi corazón siga latiendo,
+</p>
+
+<p>
+siempre encontrarás en mí un lugar seguro.
+</p>
+
+<p>
+Un abrazo sincero.
+</p>
+
+<p>
+Un amor incondicional.
+</p>
+
+<p>
+Una persona que jamás dejará de elegirte.
+</p>
+
+<p>
+Porque elegirte a ti no es una decisión que tomé una sola vez.
+</p>
+
+<p>
+Es una decisión que mi corazón vuelve a tomar cada mañana, cada tarde y cada noche.
+</p>
+
+<p>
+Te elijo cuando despierto.
+</p>
+
+<p>
+Te elijo cuando pienso en el futuro.
+</p>
+
+<p>
+Te elijo cuando cierro los ojos.
+</p>
+
+<p>
+Te elijo incluso en mis sueños.
+</p>
+
+<p>
+Y volvería a elegirte una y mil veces más.
+</p>
+
+<p>
+Porque contigo entendí que el verdadero amor no consiste únicamente en decir "te amo".
+</p>
+
+<p>
+Consiste en demostrarlo.
+</p>
+
+<p>
+En permanecer.
+</p>
+
+<p>
+En cuidar.
+</p>
+
+<p>
+En respetar.
+</p>
+
+<p>
+En admirar.
+</p>
+
+<p>
+En construir juntos un futuro lleno de esperanza.
+</p>
+
+<p class="destacado">
+Mi princesa hermosa...
+</p>
+
+<p>
+Hay algo que quiero prometerte esta noche.
+</p>
+
+<p>
+Prometo seguir enamorándote con pequeños detalles.
+</p>
+
+<p>
+Prometo seguir escribiéndote con el corazón.
+</p>
+
+<p>
+Prometo seguir aprendiendo a amarte mejor cada día.
+</p>
+
+<p>
+Prometo cuidar aquello tan valioso que Dios puso entre nuestras manos.
+</p>
+
+<p>
+Y prometo que, mientras exista un solo latido dentro de mi pecho,
+</p>
+
+<p>
+mi amor seguirá pronunciando tu nombre con la misma emoción que siente hoy.
+</p>
+
+<p>
+Si el universo entero me preguntara cuál es su creación más perfecta...
+</p>
+
+<p>
+no señalaría una galaxia.
+</p>
+
+<p>
+Ni una estrella.
+</p>
+
+<p>
+Ni un atardecer.
+</p>
+
+<p>
+Ni el océano.
+</p>
+
+<p>
+Te señalaría a ti.
+</p>
+
+<p>
+Porque ninguna maravilla del mundo logra hacer sentir a mi corazón lo que tú consigues con una sola sonrisa.
+</p>
+
+<p>
+Gracias por existir.
+</p>
+
+<p>
+Gracias por aparecer en mi vida.
+</p>
+
+<p>
+Gracias por llenar de colores los días que antes parecían grises.
+</p>
+
+<p>
+Gracias por permitirme descubrir una felicidad que jamás imaginé vivir.
+</p>
+
+<p>
+Y gracias...
+</p>
+
+<p>
+por ser exactamente quien eres.
+</p>
+
+<p>
+Esta noche de domingo quiero que cierres los ojos por un instante e imagines que mi corazón está abrazando al tuyo.
+</p>
+
+<p>
+Que cada palabra de este poema se convierte en una caricia para tu alma.
+</p>
+
+<p>
+Que cada "te amo" viaja hasta ti acompañado por todas las estrellas del cielo.
+</p>
+
+<p>
+Y que, aunque la distancia o el tiempo intenten separarnos por momentos,
+</p>
+
+<p>
+mi amor siempre encontrará el camino de regreso hacia ti.
+</p>
+
+<p>
+Porque tú eres mi presente.
+</p>
+
+<p>
+Mi ilusión más bonita.
+</p>
+
+<p>
+Mi mayor alegría.
+</p>
+
+<p>
+Mi paz.
+</p>
+
+<p>
+Mi hogar.
+</p>
+
+<p>
+Mi destino.
+</p>
+
+<p>
+Mi para siempre.
+</p>
+
+<p>
+Y mientras exista una luna iluminando las noches,
+</p>
+
+<p>
+mientras continúe saliendo el sol cada mañana,
+</p>
+
+<p>
+mientras el universo siga escribiendo historias de amor...
+</p>
+
+<p>
+la nuestra será la que mi corazón contará con más orgullo.
+</p>
+
+<p>
+Porque te amo con todo lo que soy.
+</p>
+
+<p>
+Con todo lo que fui.
+</p>
+
+<p>
+Y con todo lo que algún día llegaré a ser.
+</p>
+
+<p class="final">
+Te amo infinitamente, mi princesa hermosa.
+</p>
+
+<p class="final">
+Feliz noche de domingo, mi amor eterno. ❤️
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+// Crear estrellas
+const stars = document.querySelector('.stars');
+
+for(let i=0;i<220;i++){
+
+const star=document.createElement('span');
+
+star.className='star';
+
+star.style.left=Math.random()*100+'%';
+
+star.style.top=Math.random()*100+'%';
+
+star.style.animationDuration=(2+Math.random()*5)+'s';
+
+star.style.animationDelay=(Math.random()*5)+'s';
+
+stars.appendChild(star);
+
+}
+
+// Pétalos
+for(let i=0;i<28;i++){
+
+const p=document.createElement('div');
+
+p.className='petalo';
+
+p.innerHTML='🌹';
+
+p.style.left=Math.random()*100+'vw';
+
+p.style.animationDuration=(10+Math.random()*10)+'s';
+
+p.style.animationDelay=(Math.random()*15)+'s';
+
+document.body.appendChild(p);
+
+}
+
+// Corazones
+for(let i=0;i<24;i++){
+
+const h=document.createElement('div');
+
+h.className='heart';
+
+h.innerHTML='❤';
+
+h.style.left=Math.random()*100+'vw';
+
+h.style.fontSize=(12+Math.random()*26)+'px';
+
+h.style.animationDuration=(12+Math.random()*12)+'s';
+
+h.style.animationDelay=(Math.random()*15)+'s';
+
+document.body.appendChild(h);
+
+}
+
+</script>
+
+</body>
+</html> 
